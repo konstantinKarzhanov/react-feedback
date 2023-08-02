@@ -24,7 +24,7 @@ const ContextProvider = ({ children }) => {
   useEffect(() => {
     // This useEffect is triggered when the "isSubmitted" state changes
     // It simply toggles the "isSubmitted" state to trigger a re-render
-    isSubmitted && setIsSubmitted((prev) => !prev);
+    isSubmitted && setIsSubmitted(false);
   }, [isSubmitted]);
 
   useEffect(() => {
