@@ -40,7 +40,7 @@ const ContextProvider = ({ children }) => {
     try {
       const request = await fetch(url, options);
       const response = await request.json();
-      return await response;
+      return response;
     } catch ({ name, message }) {
       console.log(`${name}: ${message}`);
     }
