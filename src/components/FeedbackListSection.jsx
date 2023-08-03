@@ -12,9 +12,9 @@ const FeedbackListSection = () => {
   return (
     <section>
       <ul className="flow-spacing--m">
-        {feedbackArr.map(({ id, rating, feedback }, index) => (
+        {feedbackArr.map(({ id, rating, feedback }) => (
           <FeedbackListItem
-            key={`${id}${index}`}
+            key={id}
             idHandle={id}
             ratingHandle={rating}
             feedbackHandle={feedback}
